@@ -1,7 +1,6 @@
 package com.study.projectboard.controller;
 
 import org.springframework.stereotype.Controller;
-<<<<<<< HEAD
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -25,11 +24,4 @@ public class ArticleController {
         map.addAttribute("articleComments", List.of());
         return "articles/detail";
     }
-=======
-import org.springframework.web.bind.annotation.RequestMapping;
-
-@RequestMapping("/articles")
-@Controller
-public class ArticleController {
->>>>>>> #15-view
 }
