@@ -35,6 +35,8 @@ spring:
     rest:
       base-path: /api
       detection-strategy: annotated
+  thymeleaf3:
+    decoupled-logic: true
 ---
 
 # datajpatest 기본 세팅으로도 동작하므로 밑은 주석처리
