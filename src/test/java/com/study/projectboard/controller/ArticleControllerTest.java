@@ -29,7 +29,11 @@ class ArticleControllerTest {
         // when & then
         mvc.perform(get("/articles"))
                 .andExpect(status().isOk())
+<<<<<<< HEAD
                 .andExpect(content().contentTypeCompatibleWith(MediaType.TEXT_HTML))
+=======
+                .andExpect(content().contentType(MediaType.TEXT_HTML))
+>>>>>>> #15-view
                 .andExpect(view().name("articles/index"))
                 .andExpect(model().attributeExists("articles"));
     }
@@ -42,7 +46,11 @@ class ArticleControllerTest {
         // when & then
         mvc.perform(get("/articles/1"))
                 .andExpect(status().isOk())
+<<<<<<< HEAD
                 .andExpect(content().contentTypeCompatibleWith(MediaType.TEXT_HTML))
+=======
+                .andExpect(content().contentType(MediaType.TEXT_HTML))
+>>>>>>> #15-view
                 .andExpect(view().name("articles/detail"))
                 .andExpect(model().attributeExists("article"))
                 .andExpect(model().attributeExists("articleComments"));
@@ -56,7 +64,11 @@ class ArticleControllerTest {
         // when & then
         mvc.perform(get("/articles/search"))
                 .andExpect(status().isOk())
+<<<<<<< HEAD
                 .andExpect(content().contentTypeCompatibleWith(MediaType.TEXT_HTML))
+=======
+                .andExpect(content().contentType(MediaType.TEXT_HTML))
+>>>>>>> #15-view
                 .andExpect(view().name("articles/search"));
     }
 
@@ -68,7 +80,11 @@ class ArticleControllerTest {
         // when & then
         mvc.perform(get("/articles/search-hashtag"))
                 .andExpect(status().isOk())
+<<<<<<< HEAD
                 .andExpect(content().contentTypeCompatibleWith(MediaType.TEXT_HTML))
+=======
+                .andExpect(content().contentType(MediaType.TEXT_HTML))
+>>>>>>> #15-view
                 .andExpect(view().name("articles/search-hashtag"));
     }
 }
